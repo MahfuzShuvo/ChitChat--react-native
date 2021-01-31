@@ -6,6 +6,7 @@ import chatRoomsData from '../data/Chats';
 import ChatMessage from '../components/ChatMessage';
 
 import BG from '../assets/images/BG.png';
+import InputBox from '../components/InputBox';
 
 const ChatRoomScreen = () => {
     const route = useRoute();
@@ -17,6 +18,7 @@ const ChatRoomScreen = () => {
                     <ChatMessage message={ item } />
                 }
             />
+            <InputBox />
         </ImageBackground>
         
     );
