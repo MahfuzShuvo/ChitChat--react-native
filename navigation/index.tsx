@@ -12,6 +12,7 @@ import LinkingConfiguration from './LinkingConfiguration';
 import Colors from '../constants/Colors';
 import { View } from '../components/Themed';
 import { Octicons, MaterialCommunityIcons, FontAwesome5, MaterialIcons } from '@expo/vector-icons';
+import ContactScreen from '../screens/ContactScreen';
 
 // If you are not familiar with React Navigation, we recommend going through the
 // "Fundamentals" guide: https://reactnavigation.org/docs/getting-started
@@ -81,6 +82,10 @@ function RootNavigator() {
             </View>
           )
         })} 
+      />
+      <Stack.Screen 
+        name="Contacts" 
+        component={ContactScreen} 
       />
       <Stack.Screen name="NotFound" component={NotFoundScreen} options={{ title: 'Oops!' }} />
     </Stack.Navigator>
